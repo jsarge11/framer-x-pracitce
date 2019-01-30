@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Dropdown from './components/Dropdown/Dropdown';
 
 class App extends Component {
+  state = {
+    text: ["1. Make this dropdown a React component.", "2. Demo the component in Framer X.", "3. Don't use any libraries.", "4. Final Deliverable should be a Framer X file.", "Bonus: Add changable props in the Framer X interface."],
+    placeholder: 'Create a React Component'
+  }
   render() {
+    let { text, placeholder } = this.state;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Dropdown placeholder={placeholder} text={text}/>
     );
   }
 }

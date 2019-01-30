@@ -1,0 +1,17 @@
+.dropdown-item {
+ padding: 2.5% 4%;
+ width: 593px;
+}
+.dropdown-item:not(:first-child) {
+ border-top: 1px solid lightgrey;
+}
+.dropdown-item:hover {
+ background: rgb(174,204,255);
+}
+.dropdown-item p {
+ tab-size: 4;
+ margin: 0;
+ font-family: 'IBM Plex Sans', sans-serif;
+ font-size: 16px;
+ letter-spacing:0px;
+}
